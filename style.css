@@ -147,30 +147,7 @@ body {
   min-height: 100vh;
 }
 
-/* ===== LEFT SIDEBAR (STICKY) ===== */
-.sidebar {
 
-  background: #111827;
-  color: white;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  flex-shrink: 0;
-  flex: 0 0 22%;
-  position: sticky;
-  /* 🔑 KEY */
-  top: 0;
-  /* 🔑 KEY */
-  height: 100vh;
-  /* full screen height */
-}
-
-.sidebar {
-  position: sticky;
-  top: var(--navbar-height);
-  /* 🔑 KEY LINE */
-  height: calc(100vh - var(--navbar-height));
-  padding-top: 24px;
-}
 
 .profile-img {
   width: 160px;
@@ -242,7 +219,7 @@ body {
 }
 
 
-.page-wrapper {
+.page-layout {
   display: flex;
   width: 100%;
   min-height: 100vh;
@@ -294,9 +271,112 @@ footer {
   margin-top: 60px;
 }
 
+
+/* BIO CARD */
+.bio-card {
+  margin-bottom: 25px;
+  
+}
+
+.bio-inner {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 14px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-inner:hover {
+  transform: translateY(-4px);
+
+}
+
+/* Image */
+.bio-image img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;          /* square with soft radius */
+  border: 3px solid #4f46e5;
+}
+
+/* Content */
+.bio-content {
+  flex: 1;
+}
+
+.bio-content h2 {
+  margin: 0;
+  font-size: 26px;
+
+}
+
+.bio-content h4 {
+  margin: 6px 0;
+
+  font-weight: 600;
+}
+
+.bio-content p {
+  margin: 8px 0 14px;
+
+  line-height: 1.6;
+}
+
+/* Social Icons */
+.bio-social {
+  display: flex;
+  gap: 12px;
+}
+
+.bio-social a {
+  width: 40px;
+  height: 40px;
+  background: #2b3138;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 1000;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.bio-social a:hover {
+
+  transform: translateY(-3px);
+}
+.bio-card{
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #7b7cff;
+  /* academic accent */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .bio-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-image img {
+    margin: 0 auto;
+  }
+
+  .bio-social {
+    justify-content: center;
+  }
+}
+
+
 /* Academic Card Color Styling */
 .academic-card {
-  border-left: 6px solid #6366f1;
+  border-left: 6px solid #6bc831;
   /* indigo accent */
 }
 
@@ -340,6 +420,7 @@ footer {
 .research-section {
   margin-top: 24px;
 }
+
 
 .research-card {
   background: #ffffff;
