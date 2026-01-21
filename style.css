@@ -236,7 +236,7 @@ body {
 
 
 section {
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 
 }
 
@@ -786,7 +786,10 @@ body {
    ========================= */
 section {
   width: 100%;
-  padding: 40px 0;
+  padding: 10px 0;
+}
+section {
+  scroll-margin-top: 40px;
 }
 
 .card {
