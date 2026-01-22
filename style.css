@@ -294,8 +294,8 @@ footer {
 
 /* Image */
 .bio-image img {
-  width: 160px;
-  height: 160px;
+  width: 170px;
+  height: 180px;
   object-fit: cover;
   border-radius: 14px;          /* square with soft radius */
   border: 3px solid #4f46e5;
@@ -652,16 +652,20 @@ border-left: 5px solid transparent;
   border-left: 5px solid transparent;
   letter-spacing: 0.3px;
 }
-
-/* activities – reviewer  */
 .activities-title.reviewer {
   border-color: #2563eb;
   /* same as Programming Skills */
 }
 
+/* activities – reviewer  */
+.activities-title.ResearchExperience {
+  border-color: #32c079;
+  /* same as Programming Skills */
+}
+
 /* activities – volunteer */
 .activities-title.volunteer {
-  border-color: #1e40af;
+  border-color: #37b3e4;
 }
 
 /* activities – leadership */
@@ -672,11 +676,9 @@ border-left: 5px solid transparent;
 /* ===== ACTIVITY LIST FIX ===== */
 .activity-list {
   margin-top: 10px;
-  /* title থেকে নিচে নামাবে */
   padding-left: 28px;
-  /* bullet + text proper indent */
   margin-left: 0;
-  /* title-এর বাম দিকে আর যাবে না */
+
 }
 
 .activity-list li {
@@ -854,6 +856,34 @@ section {
 .cert-img.expanded {
   transform: scale(1.08);
 }
+/* Hover effect (optional but professional) */
+
+
+/* Each certificate card */
+.cert-box {
+  width: 100%;
+}
+
+
+
+/* hover effect 
+.cert-img-wrap img:hover {
+  transform: scale(8.04);
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Certificate text */
 .cert-info {
@@ -1005,7 +1035,6 @@ section {
 
 .contact-card {
   max-width: 1200px;
-  /* 🔑 form-friendly width */
   margin: 0 auto;
   /* center the card */
 }
@@ -1108,8 +1137,6 @@ section {
   transform: translateY(-2px);
   box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
 }
-
-
 
 /*=================
 ====================*/
