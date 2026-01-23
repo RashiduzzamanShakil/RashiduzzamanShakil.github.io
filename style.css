@@ -312,8 +312,33 @@ footer {
   height: 42px;
   border-radius: 10px;
   background: #1f2937;
+  cursor: pointer;
+  font-size: 25px;
   cursor: pointer
 }
+.scholar-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+.orcid-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.linkedin-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.facebook-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.youtube-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
 
 .icon-toast {
   position: absolute;
