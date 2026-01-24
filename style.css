@@ -313,7 +313,7 @@ footer {
   border-radius: 10px;
   background: #1f2937;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 26px;
   cursor: pointer
 }
 .scholar-icon {
@@ -326,12 +326,12 @@ footer {
 }
 
 .linkedin-icon {
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
 }
 
 .facebook-icon {
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
 }
 .youtube-icon {
@@ -1059,3 +1059,4 @@ body.dark .site-footer {
 body.dark .site-footer .footer-name {
   color: #a5b4fc
 }
+
